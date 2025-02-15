@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>গণিত গুরু - AI Math Solver</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJax for LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Tesseract.js (Bengali OCR) -->
+    <script src="https://unpkg.com/tesseract.js@v3.0.3/dist/tesseract.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>গণিত গুরু</h1>
+        <div class="input-section">
+            <textarea id="questionInput" placeholder="প্রশ্ন লিখুন বাংলা বা ইংরেজিতে..."></textarea>
+            <button onclick="solveProblem()">সমাধান দেখুন</button>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+        <div id="solution"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
